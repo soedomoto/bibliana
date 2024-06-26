@@ -1,34 +1,40 @@
-# bibliana.com
+# README
 
-An Electron application with React and TypeScript
+## About
 
-## Recommended IDE Setup
+This template comes with Vite, React, TypeScript, TailwindCSS and shadcn/ui.
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+Built with `Wails v2.5.1` and [shadcn's CLI](https://ui.shadcn.com/docs/cli)
 
-## Project Setup
-
-### Install
-
-```bash
-$ pnpm install
+### Using the Template
+```console
+wails init -n project-name -t https://github.com/Mahcks/wails-vite-react-tailwind-shadcnui-ts
 ```
 
-### Development
-
-```bash
-$ pnpm dev
+```console
+cd frontend
 ```
 
-### Build
-
-```bash
-# For windows
-$ pnpm build:win
-
-# For macOS
-$ pnpm build:mac
-
-# For Linux
-$ pnpm build:linux
+```console
+npm install
 ```
+
+### Installing Components
+To install components, use shadcn's CLI tool to install
+
+More info here: https://ui.shadcn.com/docs/cli#add
+
+Example:
+```console
+npx shadcn-ui@latest add [component]
+```
+
+## Live Development
+
+To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
+directory and run `npm run dev`. The frontend dev server will run on http://localhost:34115. Connect to this in your
+browser and connect to your application.
+
+## Building
+
+To build a redistributable, production mode package, use `wails build`.
